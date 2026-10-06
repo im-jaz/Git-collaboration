@@ -1,50 +1,3 @@
-/* Header */
-.header {
-    height: 72px;
-    padding: 0 7%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    background-color: white;
-}
-
-.logo {
-    font-family: "Playfair Display", serif;
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: 7px;
-}
-
-.navbar {
-    display: flex;
-    gap: 35px;
-}
-
-.navbar a {
-    font-size: 12px;
-    color: #444;
-    transition: 0.3s;
-}
-
-.navbar a:hover,
-.navbar .active {
-    color: #ef6b73;
-}
-
-.navbar a{
-    background-color: black;
-    color: white;
-    padding: 10px 22px;
-    border-radius: 25px;
-    font-weight: 500;
-}
-
-.navbar a :hover {
-    background-color: transparent;
-    color: #ef6b73;
-    border-color: #ef6b73;
 /* general styles*/
 
 * {
@@ -111,4 +64,69 @@ img {
 .btn:hover,
 .search-btn:hover {
     background-color: #d9545d;
+}
+
+/*book section */
+
+.books-section {
+    background-color: #f7f7f7;
+    padding: 60px 7% 80px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/*book grid*/
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1050px;
+    margin: auto;
+}
+
+
+/* book card */
+
+.book-card {
+    background-color: white;
+    padding: 25px 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.book-image {
+    height: 300px;
+    position: relative;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-image img {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.book-card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 13px;
+    margin-bottom: 5px;
 }
