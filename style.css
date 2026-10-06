@@ -45,4 +45,70 @@
     background-color: transparent;
     color: #ef6b73;
     border-color: #ef6b73;
+/* general styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #222;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/* hero */
+
+.hero {
+    height: 325px;
+    background-image:
+        url("hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 12%;
+}
+
+.hero-content p {
+    color: #e76d75;
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.hero-content h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.btn, .search-btn {
+    display: inline-block;
+    background-color: #ef6b73;
+    color: white;
+    border: none;
+    padding: 10px 28px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover,
+.search-btn:hover {
+    background-color: #d9545d;
 }
